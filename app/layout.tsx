@@ -1,3 +1,8 @@
+'use client';
+import '@/app/ui/global.css';
+import { Toaster } from 'react-hot-toast';
+import { CourseProvider } from './context/courseContext';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Toaster position="top-center" />
+      <CourseProvider>
+        <body>{children}</body>
+      </CourseProvider>
     </html>
   );
 }
