@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { CiSearch } from 'react-icons/ci';
+import { useApp } from '@/app/context/courseContext';
 
 const courses = [
   {
@@ -39,6 +40,8 @@ const courses = [
 ];
 
 export default function Courses() {
+  const { userData } = useApp();
+  console.log(' userData here', userData);
   const [filter, setFilter] = useState('all');
   const [courseList, setCourseList] = useState(courses);
   const [searchInput, setSearchInput] = useState('');
@@ -64,7 +67,9 @@ export default function Courses() {
   return (
     <>
       <div className=" w-full md:pt-8">
-        <h1 className="mt-5 text-3xl font-semibold">Welcome Olawale</h1>
+        <h1 className="mt-5 text-3xl font-semibold">
+          Welcome {userData?.firstName}
+        </h1>
         <p className="mt-3">
           View a list of all availabe courses on the platform
         </p>
