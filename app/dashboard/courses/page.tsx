@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { CiSearch } from 'react-icons/ci';
 
 const courses = [
   {
@@ -50,19 +51,24 @@ export default function Courses() {
     setCourseList(filtered);
   };
   const searchFn = () => {
+    if (searchInput.length === 0) setCourseList(courses);
     const searchFilter = courses.filter((item) =>
       item.course.toLowerCase().includes(searchInput.toLowerCase()),
     );
     setCourseList(searchFilter);
   };
+  const searchFilter = courses.filter((item) =>
+    item.course.toLowerCase().includes(searchInput.toLowerCase()),
+  );
 
   return (
     <>
-      <div className="w-[70%] md:absolute md:right-0 md:pt-8">
+      <div className=" w-full md:pt-8">
         <h1 className="mt-5 text-3xl font-semibold">Welcome Olawale</h1>
         <p className="mt-3">
           View a list of all availabe courses on the platform
         </p>
+
         <div className="mt-8 flex flex-col text-center md:flex-row md:items-center md:justify-between md:pr-10">
           <div className="flex items-center justify-between rounded-xl border md:h-[3rem] md:w-[20%] ">
             <button
@@ -103,31 +109,37 @@ export default function Courses() {
             </button>
           </div>
           <div className="flex items-center justify-around">
-            <form action="" className="mt-10 md:mt-0">
-              <input
-                type="text"
-                placeholder="search"
-                onChange={(e) => {
-                  setSearchInput(e.target.value);
-                  searchFn();
-                }}
-              />
+            <form action="" className="mt-10 ">
+              <div className="relative border border-gray-100">
+                <CiSearch className="absolute left-2 top-3 mr-2" />
+                <input
+                  type="text"
+                  className="w-full pl-7"
+                  placeholder="search"
+                  onChange={(e) => {
+                    setSearchInput(e.target.value);
+                    searchFn();
+                  }}
+                />
+              </div>
             </form>
           </div>
         </div>
       </div>
-      <div className="mt-5 md:hidden">
-        <div className="">
-          {courseList.map((course) => {
+
+      <div className="mt-5 ">
+        <div className="grid-cols-2 gap-8 md:grid">
+          {searchFilter.map((course, idx) => {
             return (
               <>
-                <div className="mb-8" key={course.tutorName}>
+                <div className="mb-8" key={idx}>
                   <Image
                     src="/webdev.avif"
                     alt="web dev image"
-                    width={800}
-                    height={800}
-                    className="z-[-10]"
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    className="z-[-10]  w-full object-cover md:h-[250px]"
                   />
                   <div className=" z-20 mt-[-5rem]  flex h-[5rem] items-start justify-between bg-gray-100 bg-opacity-40 px-7 py-4 backdrop-blur-sm">
                     <div className="text-white">
@@ -157,7 +169,9 @@ export default function Courses() {
           })}
         </div>
       </div>
-      <div className="mt-[20rem] hidden px-10 md:absolute  md:right-0  md:block">
+
+      {/* outlet */}
+      {/* <div className="mt-[20rem] hidden px-10 md:absolute  md:right-0  md:block">
         <div className="md:grid md:grid-cols-2">
           <div className="w-[60%]">
             <Image alt="desktop" src="/webdev.avif" width={800} height={800} />
@@ -180,7 +194,7 @@ export default function Courses() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

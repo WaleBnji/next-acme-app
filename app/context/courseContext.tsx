@@ -55,8 +55,7 @@ export const CourseProvider = (props: { children: React.ReactNode }) => {
   const [courseList, setCourseList] = useState(courses);
   const [userInput, setUserInput] = useState('');
   const value = {
-    courseList,
-    setCourseList,
+    courses: courseList,
   };
 
   return (

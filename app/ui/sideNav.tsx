@@ -19,7 +19,7 @@ const SideNav = () => {
   const pathName = usePathname();
   return (
     <>
-      <div className="fixed z-50 hidden h-full w-[20%] bg-white pt-[8rem] md:block">
+      <div className=" h-full w-full bg-white pt-[8rem]">
         <form action="">
           <div className="relative mx-auto flex w-[80%] rounded-lg border">
             <input

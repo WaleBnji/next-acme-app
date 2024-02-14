@@ -12,7 +12,7 @@ export default function SignIn() {
 
   const navigate = useRouter();
 
-  const handleChange = (e: React.ChangeEventHandler<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({
       ...credentials,
       [e.target.id]: e.target.value,

@@ -14,7 +14,7 @@ export default function SignUp() {
     email: '',
   });
 
-  const handleChange = (e: React.ChangeEventHandler<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({
       ...credentials,
       [e.target.id]: e.target.value,
@@ -33,7 +33,7 @@ export default function SignUp() {
       toast.success(res?.data?.message || 'successfully signed up');
       navigate.push('/sign-in');
     } catch (error) {
-      toast.error(error?.response?.data?.message || 'An error occured');
+      toast.error('An error occured');
       console.log(error);
     } finally {
       setLoading(false);
