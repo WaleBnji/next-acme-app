@@ -1,9 +1,9 @@
 ## Next.js Acme Proejct
 
-##Clone this repo to your local machine 
+##Clone this repo to your local machine
+Run the following command
 
-run ##  npm install 
-
-and 
+1. npm install
+2. npm run dev
 
 ## npm run dev
