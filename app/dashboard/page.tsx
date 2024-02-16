@@ -1,12 +1,14 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { useApp } from '../context/courseContext';
 
 const Dashboard = () => {
+  const { userData } = useApp();
   const navigate = useRouter();
   return (
-    <div>
-      <h1>Welcome Olawale</h1>
+    <div className="flex flex-col items-center justify-center py-96">
+      <h1>Welcome {userData?.firstName}</h1>
       <p>
         Go to the courses{' '}
         <button

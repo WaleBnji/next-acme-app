@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <MobileNav />
 
       <div className="flex w-full items-start">
-        <div className="borer hidden h-screen w-[30%] max-w-[350px] border-red-500 md:block">
+        <div className=" hidden h-screen w-[30%] max-w-[350px] border-red-500 md:block">
           <SideNav />
         </div>
 

@@ -1,8 +1,8 @@
 export default function SignIn() {
   return (
-    <div className="mt-10 py-20 pl-10">
+    <div className="mt-10 py-20 pl-10 ">
       <div className="mb-20 flex flex-col text-center">
-        <h1 className="text-3xl font-bold">Welcome Back</h1>
+        <h1 className="text-3xl font-bold text-red-500">Welcome Back</h1>
         <p> Welcome back! Please enter your details</p>
       </div>
       <form action="" className="ml-4 mt-10 w-full space-y-10">

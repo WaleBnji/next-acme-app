@@ -20,13 +20,19 @@ const SideNav = () => {
   return (
     <>
       <div className=" h-full w-full bg-white pt-[8rem]">
-        <form action="">
+        {/* <form action="">
           <div className="relative mx-auto flex w-[80%] rounded-lg border">
             <input
               type="text"
               className="w-full border-0 outline-0 focus:outline-0  focus:outline-transparent"
               placeholder="Search"
             />
+          </div>
+        </form> */}
+        <form action="" className="mt-10 ">
+          <div className="relative mx-auto w-[80%] border border-gray-100">
+            <CiSearch className="absolute left-2 top-3 mr-2" />
+            <input type="text" className=" w-full pl-7" placeholder="search" />
           </div>
         </form>
         <nav className="mt-10 flex flex-col px-6">
