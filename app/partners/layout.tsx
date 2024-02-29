@@ -5,6 +5,8 @@ import SideNav from '@/app/ui/sideNav';
 import { useApp } from '../context/courseContext';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import PartnerSideNav from '../ui/partnerSideNav';
+import PartnerMobileNav from '../ui/partnerMobileNav';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const { userData } = useApp();
@@ -18,10 +20,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex h-screen flex-col md:relative md:flex-row md:justify-between md:overflow-hidden">
-      <MobileNav />
+      <PartnerMobileNav />
       <div className="flex w-full items-start">
         <div className=" hidden h-screen w-[30%] max-w-[350px] border-red-500 md:block">
-          <SideNav />
+          <PartnerSideNav />
         </div>
         <div className="h-screen p-6 md:w-full md:overflow-y-scroll md:p-12">
           {children}
