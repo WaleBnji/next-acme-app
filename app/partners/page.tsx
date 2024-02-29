@@ -40,136 +40,146 @@ export default function Partners() {
           <p className="mt-8 text-5xl font-semibold">0</p>
         </div>
       </div>
-      <div className="mt-8">
-        <h2 className="mb-6 text-2xl font-semibold">
-          Courses available on platform
-        </h2>
-        <button>View all</button>
-        <div className="flex flex-col space-y-6 py-6">
-          <div className="h-[450px] rounded-lg border ">
-            <Image
-              width={3000}
-              height={3000}
-              alt="courses image"
-              src="/webdev.avif"
-              className="mb-8"
-            />
-            <h4 className="px-3 font-semibold">Web Development</h4>
-            <p className="px-3">
-              Dive into the world of coding and design as we explore the
-              fundamentals of web development
-            </p>
-            <button className="ml-[0.7rem] mt-4  rounded-md bg-green-500 px-6 py-2 text-white">
-              View
-            </button>
+      <div className="mt-8 md:flex md:items-start">
+        <div className="md:w-[65%]">
+          <div className="flex flex-col items-start md:flex-row md:items-center md:justify-between">
+            <h2 className="mb-6 text-2xl font-semibold">
+              Courses available on platform
+            </h2>
+            <button>View all</button>
           </div>
-          <div className="h-[450px] rounded-lg border ">
-            <Image
-              width={3000}
-              height={3000}
-              alt="courses image"
-              src="/webdev.avif"
-              className="mb-8"
-            />
-            <h4 className="px-3 font-semibold">Web Development</h4>
-            <p className="px-3">
-              Dive into the world of coding and design as we explore the
-              fundamentals of web development
-            </p>
-            <button className="ml-[0.7rem] mt-4  rounded-md bg-green-500 px-6 py-2 text-white">
-              View
-            </button>
+          <div className="flex flex-col space-y-6 py-6 md:flex-row md:items-center md:justify-between md:space-y-0">
+            <div className="h-[450px] rounded-lg border md:h-[500px] md:w-[45%]">
+              <Image
+                width={3000}
+                height={3000}
+                alt="courses image"
+                src="/webdev.avif"
+                className="mb-8"
+              />
+              <h4 className="px-3 font-semibold">Web Development</h4>
+              <p className="px-3">
+                Dive into the world of coding and design as we explore the
+                fundamentals of web development
+              </p>
+              <button
+                className="ml-[0.7rem]  mt-4 rounded-md
+bg-[#27779B] px-6 py-2 text-white"
+              >
+                View
+              </button>
+            </div>
+            <div className="h-[450px] rounded-lg border md:h-[500px] md:w-[45%] ">
+              <Image
+                width={3000}
+                height={3000}
+                alt="courses image"
+                src="/webdev.avif"
+                className="mb-8"
+              />
+              <h4 className="px-3 font-semibold">Web Development</h4>
+              <p className="px-3">
+                Dive into the world of coding and design as we explore the
+                fundamentals of web development
+              </p>
+              <button
+                className="ml-[0.7rem]  mt-4 rounded-md
+bg-[#27779B] px-6 py-2 text-white"
+              >
+                View
+              </button>
+            </div>
           </div>
         </div>
-        <div>
-          <h2>Activity</h2>
-          <div className="space-y-6 pb-6">
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+        <div className="md:mt-4 md:w-[30%] md:px-16">
+          <h2 className="font-medium">Activity</h2>
+          <div className="space-y-6 pb-6 md:flex md:flex-col md:items-center md:justify-center">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
             </div>
-            <div className="flex items-center justify-between">
-              <div className="inline-block h-[40px] w-[40px] overflow-hidden rounded-full">
+            <div className="flex ">
+              <div className="mr-3 inline-block h-[40px] w-[40px] overflow-hidden rounded-full md:mr-2">
                 <Image
-                  width={100}
-                  height={100}
+                  width={70}
+                  height={70}
                   alt="profile picture"
                   src="/profileimage.jpg"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col text-[0.9rem]">
                 <h4>Demi Wikinson</h4>
                 <p>Made payment for Product design 101</p>
               </div>
