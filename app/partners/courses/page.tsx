@@ -5,7 +5,9 @@ export default function PartnerCourses() {
   return (
     <div className="pb-16">
       <div className="space-y-4">
-        <h1 className="text-2xl font-semibold">Courses</h1>
+        <h1 className="text-2xl font-semibold md:text-3xl md:tracking-wider">
+          Courses
+        </h1>
         <p>View all courses amd edit the necessary details</p>
       </div>
       <div className="mt-12 flex flex-col items-center space-y-6 md:flex-row md:justify-between md:space-y-0">
@@ -20,7 +22,7 @@ export default function PartnerCourses() {
       </div>
       <div>
         <div className="mt-8 space-y-4">
-          <div className="h-[370px] rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
+          <div className=" h-[370px] cursor-pointer rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
             <Image src="/Image.svg" alt="product" height={400} width={400} />
 
             <div className="flex items-end justify-between md:ml-5 ">
@@ -36,7 +38,7 @@ export default function PartnerCourses() {
               </p>
             </div>
           </div>
-          <div className="h-[370px] rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
+          <div className="h-[370px] cursor-pointer rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
             <Image src="/Image.svg" alt="product" height={400} width={400} />
 
             <div className="flex items-end justify-between md:ml-5 ">
@@ -52,7 +54,7 @@ export default function PartnerCourses() {
               </p>
             </div>
           </div>
-          <div className="h-[370px] rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
+          <div className=" h-[370px] cursor-pointer rounded-lg border px-2 py-3 md:relative md:flex md:h-[320px] md:items-start">
             <Image src="/Image.svg" alt="product" height={400} width={400} />
 
             <div className="flex items-end justify-between md:ml-5 ">
